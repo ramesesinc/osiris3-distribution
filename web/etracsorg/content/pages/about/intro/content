@@ -1,0 +1,79 @@
+@pagetitle()
+
+<p>
+E-TRACS is a free software available to local government units to computerize tax and revenue assessments and 
+collection. Designed,developed and maintained by Rameses Systems Inc, the project aims to seamlessly and fully integrate 
+real property system, business licensing and all other revenue activities to treasury operations. Our mission is to 
+provide an effective management tool to enforce discipline and best practice in LGU operations; one that can be easily availed 
+especially for LGUs that cannot afford such systems. E-TRACS can be availed through grants, LGU to LGU assistance, 
+or directly applying for membership in the community.      
+</p>
+
+<h2>Why should an LGU choose E-TRACS?</h2>
+<ol>
+<li>It fully automates the complete revenue cycle - from real property assessment, business permit and licensing and 
+treasury operations (accountable forms inventory, collection, remittance, liquidation and deposit) </li>
+<li>The software is free and total cost of running the system is low. </li>
+<li>LGUs get the source code and documentation.</li>
+<li>Trainings are available to help an LGU customize the system based on their specific needs.</li>
+<li>LGUs get to choose whether to deploy E-TRACS in Windows or open source systems like Linux and can choose whether to 
+use MSSQL Server(commercial database) or MySQL(open source).</li>
+<li>It has a community of LGU users who will be willing to share knowledge and answer questions.</li>
+<li>E-TRACS is continuously being developed for improvements and new innovations.</li>
+<li>E-TRACS is successfully being used by several LGUs today and the number is growing.</li>
+</ol>
+
+<h2>Core Modules</h2>
+The project consists of three core modules that is important for the LGU revenue operations namely:<br>
+<ul>
+	<li>Collection (Treasury)</li>
+	<li>Business Permit and Licensing</li>
+	<li>Real Property Tax Assessment</li>
+</ul>
+Other revenue process automation could be integrated through a facility called <b>plugins</b>
+
+<h2>System Requirements</h2>
+To use the system the LGU needs the following hardware and software:
+
+<h4>Hardware:</h4>
+1 Server-grade computer ( required )<br>
+1 Server-grade computer for backup (optional but highly recommended)<br>
+6 or more desktop computers ( for the different offices )<br>
+Local area network (required)<br>
+Dot matrix Printers - for online collectors for printing receipts<br>
+
+<ul>
+<li>Epson LQ300+</li>
+<li>Epson LQ590</li>
+</ul>
+
+2 or more deskjet or laser jet printer (for reports and printing permits)<br>
+
+<h4>Software:</h4>
+Server operating system : Windows 2003 or higher, Linux ( Linux recommended)
+Desktop operating system : Windows or Linux (Windows recommended)
+Database: MySQL version 5 or higher, PostgreSQL, SQL Server 2005 or higher 	
+
+
+<h2>How is E-TRACS acquired</h2>	
+
+<h4>Through grants</h4>
+<p>
+The most common and preferred way is through grants. E-TRACS was first developed and initiated through an AusAID grant. 
+Through the funding of grants via the development partners, E-TRACS is usually included as a component of the grant.   
+However for LGUs not fortunate enough to apply for grants, there are other ways in which the project can be acquired.  
+</p>
+
+<h4>Through LGUs</h4>
+<p>
+E-TRACS can be acquired through sharing. Depending on the LGU, an LGU may ask another already using E-TRACS to share 
+a copy and assist in their implementation. Usually a memorandum of agreement is signed between LGUs. 
+</p>
+<h4>Through Membership</h4>
+<p>
+If the LGU has IT capable staff to support the project, they can do it themselves. Apply first for membership by sending a letter of 
+intent signed by the mayor, and email a scanned copy to rameses.systems@gmail.com. 
+</p>
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="keywords" content="${PROJECT.keywords}"/>
+		<meta name="robots" content="index, follow" />
+		<meta name="title" content="${PROJECT.title}" />
+		<meta name="copyright" content="${PROJECT.copyright}" />
+		<meta name="description" content=${PROJECT.description}" />	
+		@head/import-fonts()
+		@head/favicon()
+		@head/standard()
+		@head/css('single')
+		@@head/page-imports()
+	</head>
+	<body>
+		<table cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td>&nbsp;</td>
+				<td class="master-header">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						<tr>
+							<td class="master-logo" valign="top">
+								<a href="/" class="logo" style="text-decoration:none;border:none;">
+									<img src="${PROJECT.single_logo}" style="border:none;"/>
+								</a>
+							</td>
+							<td align="right" valign="top">
+								<table>
+								<tr>
+									<td style="white-space:nowrap;width:10px;padding-right:5px;">
+										<a href="http://www.facebook.com/etracsorg" title="Visit Us on Facebook" style="text-decoration:none;border:none;">
+											<img src="/res/fb_logo.png" height="16" style="border:none;"/>
+										</a>
+									</td>
+									<td style="white-space:nowrap;width:10px;padding-right:5px;"> 
+										<a href="http://twitter.com/etracsorg" title="Visit Us on Twitter" style="text-decoration:none;border:none;">
+											<img src="/res/twitter_logo.png" height="16" style="border:none;"/> 
+										</a> 
+									</td>
+									<td>@navbar()</td>
+									<td>&nbsp;&nbsp;@login(caption:"Sign In")</td>
+								</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="master-content">${_content}</td>
+				<td>&nbsp;</td>
+			</tr>	
+			<tr>
+				<td class="master-footer" colspan="3">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						<tr>
+							<td class="top-footer">&nbsp;</td>
+							<td class="top-footer" width="960">@sitemap()</td>
+							<td class="top-footer">&nbsp;</td>
+						</tr>
+						<tr>	
+							<td class="bottom-footer">&nbsp;</td>
+							<td class="bottom-footer" width="960">@copyright()</td>
+							<td class="bottom-footer">&nbsp;</td>
+						</tr>
+					</table>				
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
+

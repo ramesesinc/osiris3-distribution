@@ -1,0 +1,5 @@
+/news
+/news/[year]
+/news/[year]/[month]
+/news/[year]/[month]/[day]
+/news/[year]/[month]/[day]/[title]

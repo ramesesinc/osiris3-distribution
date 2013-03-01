@@ -1,0 +1,27 @@
+@pagetitle()
+
+<style>
+	.news-section-category {
+		padding-left: 30px;	
+	}
+	.news-category-title {
+		font-weight: bolder;
+		border-bottom:1px dashed lightgrey;
+	}
+	.news-section-category {
+		padding-right: 10px;	
+	}
+</style>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td valign="top" width="750" class="news-section-list">
+			<%if(!PARAMS.title ){%>${_newslist}<%}%>
+			<%if(PARAMS.title ){%>${PARAMS.title}<%}%>
+		</td>
+		<td valign="top" class="news-section-category">
+			${_archives}
+		</td>
+	</tr>
+</table>
+

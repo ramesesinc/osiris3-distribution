@@ -1,0 +1,95 @@
+<%
+  def lgu_listing = 
+  [
+	["Maribojoc","M","Bohol","2008","LGDP (AusAID)","BP,TC","1.0","Active"],
+	["Oton","M","Iloilo","2008","LGDP (AusAID)","BP,TC","1.0","Active"],
+	["Leganes","M","Iloilo","2008","LGDP (AusAID)","-","1.0","Not known"],
+	["Puerto Princesa City","C","Palawan","2010","LAMP2 (AusAID)","Full","1.87","Active"],
+	
+	["Tayabas","C","Quezon","2010","LAMP2 (AusAID)","Full","1.87","Active"],
+	["Bayombong","M","Nueva Vizcaya","2010","LAMP2 (AusAID)","Full","1.87","Active"],
+	["Solano","M","Nueva Vizcaya","2010","LAMP2 (AusAID)","BP,TC,RPT(partial)","1.87","Active"],
+	["Legazpi","C","Albay","2010","LAMP2 (AusAID)","Full","1.87","Active"],
+	["Iriga City","C","Camarines Sur","2010","LAMP2 (AusAID)","-","1.87","Not known"],
+	["Naga","C","Camarines Sur","2010","LAMP2 (AusAID)","BP,TC,RPT(partial)","1.87","Active"],
+	["Cadiz","C","Negros Occidental","2010","LAMP2 (AusAID)","-","1.87","Not known"],
+	["Bayawan","C","Negros Occidental","2010","LAMP2 (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Oroquieta","C","Misamis Occidental","2010","LAMP2 (AusAID)","BP,TC","1.87","Active"],
+	["Nabunturan","M","Compostela Valley","2010","LAMP2 (AusAID)","BP,TC,RPT(partial)","1.87","Active"],
+
+	["Ligao","C","Albay","2010","LAMP2 (AusAID)/Regala (ADB-JFPR)","Full","2.0","Active"],
+	["San Carlos City","C","Negros Occidental","2011","Direct Engagement","BP,TC,RPT(partial)","2.0","Active"],
+	["Gapan City","C","Nueva Ecija","2011","Direct Engagement","Full","2.0","Active"],
+
+	["Loon","M","Bohol","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Balilihan","M","Bohol","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Valencia","M","Bohol","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Talibon","M","Bohol","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Dimiao","M","Bohol","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Bohol Province","P","Bohol","2011","PRMF (AusAID)","TC,RPT(partial)","2.0","Active"],
+	
+	["Tagoloan","M","Misamis Oriental","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Binuangan","M","Misamis Oriental","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Naawan","M","Misamis Oriental","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Manticao","M","Misamis Oriental","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Kinoguitan","M","Misamis Oriental","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Misamis Oriental Province","P","Misamis Oriental","2011","PRMF (AusAID)","TC,RPT(partial)","2.0","Active"],
+
+	["Libona","M","Bukidnon","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Kibawe","M","Bukidnon","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Sumilao","M","Bukidnon","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Cabanglasan","M","Bukidnon","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Lantapan","M","Bukidnon","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Bukidnon Province","P","Bukidnon","2011","PRMF (AusAID)","TC,RPT(partial)","2.0","Active"],
+
+	["Malimono","M","Surigao del Norte","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Bacuao","M","Surigao del Norte","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Alegria","M","Surigao del Norte","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Dapa","M","Surigao del Norte","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Del Carmen","M","Surigao del Norte","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Surigao del Norte Province","P","Surigao del Norte","2011","PRMF (AusAID)","TC,RPT(partial)","2.0","Active"],
+
+	["Nueva Valencia","M","Guimaras","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Jordan","M","Guimaras","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Buenavista","M","Guimaras","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["San Lorenzo","M","Guimaras","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Sibunag","M","Guimaras","2011","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Guimaras Province","P","Guimaras","2011","PRMF (AusAID)","TC,RPT(partial)","2.0","Active"],
+
+	["Clarin","M","Misamis Occidental","2012","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Sinacaban","M","Misamis Occidental","2012","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Lopez Jaena","M","Misamis Occidental","2012","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Panaon","M","Misamis Occidental","2012","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Aloran","M","Misamis Occidental","2012","PRMF (AusAID)","BP,TC,RPT(partial)","2.0","Active"],
+	["Misamis Occidental Province","P","Misamis Occidental","2012","PRMF (AusAID)","TC,RPT(partial)","2.0","Active"],
+	
+	["Piddig","M","Ilocos Norte","2012","Regala (ADB-JFPR)","BP,TC,RPT(partial)","2.0","Active"],
+	["San Nicolas","M","Ilocos Norte","2012","Regala (ADB-JFPR)","BP,TC,RPT(partial)","2.0","Active"],
+	["Ilocos Norte Province","P","Ilocos Norte","2012","Regala (ADB-JFPR)","TC, RPT(partial)","2.0","Active"],
+	["Alaminos","C","Pangasinan","2012","Regala (ADB-JFPR)","RPT(partial)","2.0","Active"],
+	["San Jose de Buenavista","M","Antique","2012","Regala (ADB-JFPR)","TC","2.0","Active"],
+	["Sariaya","M","Quezon","2012","Direct Membership","-","2.0","evaluation/testing"],
+  ]; 	
+%>
+
+
+<table width="100%" cellpadding="0" cellspacing="0" class="table">
+	<tr>
+		<td>LGU</td>
+		<td>Type</td>
+		<td>Province</td>
+		<td>Year</td>
+		<td>Project/Program</td>
+		<td>Modules</td>
+		<td>Ver</td>
+		<td>Status</td>
+	</tr>
+	<%lgu_listing.each{%>
+		<tr>
+			<%it.each{x->%>
+			<td>${x}</td>
+			<%}%>
+		</tr>
+	<%}%>
+</table>
+Total LGUs: ${lgu_listing.size()}

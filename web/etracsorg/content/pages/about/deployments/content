@@ -1,0 +1,38 @@
+@pagetitle()
+<style>
+	.label {
+		font-size:11px;
+	}
+	.table {
+		border: 1px solid gray;
+		font-size:11px;
+	}
+	.table tr:first-child{
+		font-weight:bolder;
+		background-color: lightgrey;
+	}
+	.table td{
+		padding: 4px;
+		border-right:1px solid gray;
+	}
+</style>
+<br>
+The following is an official list of LGUs deployed as of September, 2012. The list does
+not include E-TRACS deployed on an LGU-to-LGU assistance
+<br>
+${_lgu_listing}
+<br>
+<b>Legend</b>
+<br>
+<table class="label" width="100%">
+	<tr>
+		<td valign="top">Type: C=City M=Municipality P=Province </td>
+		<td valign="top">
+			BP=Business Permit and Licensing Module
+			<br>RPT=Real Property Module
+			<br>TC=Tax Collection Module
+		</td>
+	</tr>
+</table>
+
+

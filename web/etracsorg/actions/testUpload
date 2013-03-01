@@ -1,0 +1,6 @@
+
+def req = SESSION.request;
+def file = req.getAttribute("FILE");
+
+System.out.println("file uploaded: " + file );
+println "{message: 'done'}";

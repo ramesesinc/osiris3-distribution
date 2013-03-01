@@ -1,0 +1,82 @@
+html {
+	height:100%;
+}
+body  {
+	background-color: #ffffff;
+	margin: 0;
+	font-family: 'Open Sans', Times;
+	font-size: 11;
+	height: 100%;
+	border-radius: 2px;
+}
+
+.master-layout {
+	width:80%;
+	height: 100%;
+}
+.master-header {
+	height: 40px;
+	width: 960px;
+	vertical-align: top;
+	padding-top:15px;
+}
+.master-footer {
+	height: 100px;
+}
+
+.master-footer .top-footer {
+	background-color:#d7d7d7;
+	height:164px;
+}
+.master-footer .bottom-footer {
+	background-color:#7d7d7d;
+	height:53px;
+}
+.master-content {
+	padding:20px 2px;
+	height:400px;
+	vertical-align:top;
+}
+
+.master-logo {
+	padding-left:30px;
+	padding-bottom:5px;
+}
+.logo {
+	border: none;
+}
+.navbar {
+	font-size: 14px;
+}
+.navbar td {
+	height: 12px;
+}
+.navbar td {
+	padding: 0 15px;
+	border-right: 1px dotted lightgrey;
+}
+.navbar .gap {
+	width:0;
+	padding: 0;
+	border-right: none;
+}
+.navbar td:last-of-type {
+	border-right: none;
+}
+.navbar a {
+	text-decoration: none;
+}
+.navbar .selected a{
+	color: #9fc700;
+}
+
+.page-title {
+	font-size: 20pt;
+}
+.dropdown-login {
+	text-decoration:none;
+	font-size: 14px;
+}
+p{
+    text-indent: 2em;	
+}

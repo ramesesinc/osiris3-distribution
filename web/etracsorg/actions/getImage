@@ -1,0 +1,4 @@
+System.out.println( "hello " + request );
+print request;
+def out = response.getWriter();
+out.print( "Hello tester" );

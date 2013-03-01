@@ -1,0 +1,49 @@
+------------------------------------
+ Directory Structure 
+------------------------------------
+<base-directory> 
+	'- bin 	
+		( contains executable scripts and other configuration files )
+	
+		'- run-osiris3.bat
+		'- run-web.bat
+		'- anubis.conf
+		'- anubis.hosts
+	
+	'- context 
+		( the default osiris.home application context )
+		
+		'- apps
+		'- datasources
+		'- plugins
+		'- shared
+		'- osiris.conf
+		
+	'- server
+		( contains jar files and web libraries for anubis )
+		
+		'- lib        (jar files) 
+		'- lib.ext    (extended jar files) 
+		'- web.lib    (contains js, css, templates, etc...) 
+		'- web.res    (this is optional, serve for static resources like downloads, etc...) 
+		
+	'- web 
+		( the default web application context )
+		
+		'- etracs
+		'- clfc
+		'- gazeebu
+		
+	'- webapps  
+		( this is optional, serves for pluggable WAR files ) 
+	
+		'- barcode.war
+
+
+------------------------------------
+ Notes
+------------------------------------
+1) If you want to setup a separate osiris.home context directory, you can replace the CONTEXT_DIR property in the \bin\run-osiris3.bat script. 
+
+
+

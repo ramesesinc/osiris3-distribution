@@ -1,0 +1,14 @@
+
+import com.rameses.annotations.*;
+import com.rameses.server.common.*;
+import com.rameses.http.*;
+
+class SMSHandler
+{
+	@OnMessage("sms") 
+	public void handle(def param) 
+	{
+		println "SMSHandler: handle $param"; 
+	}
+	
+}

@@ -1,0 +1,4 @@
+print "sending email " + PARAMS.email; 
+if( !PARAMS.email )
+	throw new Exception("Email not found");
+return "/about"

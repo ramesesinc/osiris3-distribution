@@ -1,0 +1,83 @@
+<style>
+	.posts-header {
+		font-size: 20px; color: darkslateblue;
+		border-top: 1px solid lightgrey;
+	}
+	.posts-header a{
+		text-decoration:none;
+	}
+	.posts-header a:hover{
+		text-decoration:underline;
+	}
+	.posts-author {
+		font-size: 10px; font-color: gray;
+	}
+	.posts-body {
+		padding-top: 10px;
+		font-size: 15px;
+		padding-right: 20px;
+	}
+	.posts-footer {
+		padding: 5px;
+	}
+	.posts-body img{
+		float:left;
+		width:120px;
+		height:110px;
+		margin-right:15px;
+		margin-bottom:15px;
+	}
+</style>
+
+<%
+    def list = ANUBIS.getFolder('/news').allowedChildren;
+%> 
+
+<br>
+<table width="100%" cellpadding="0" cellspacing="0">
+	<%list.each{%>
+		<tr>
+			<td valign="top" class="posts-header">
+				<%if( !it.href ){%>
+				<a href="/news/${it.dtposted.replace('-','/')}/${it.title.replace(' ', '-').toLowerCase()}">${it.title}</a>		
+				<%}%>
+				<%if( it.href ){%>
+				<a href="${it.href}" target="${it.href}">${it.title}</a>		
+				<%}%>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" class="posts-author">
+				${it.postedby} | ${it.dtposted} | 0 Comments
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" class="posts-body">
+				<%if(it.icon){%><img src="${it.icon}"/><%}%>
+				 ${it.description}
+				<%if( !it.href ){%>
+				<a href="/news/${it.dtposted.replace('-','/')}/${it.title.replace(' ', '-').toLowerCase()}">Read More</a>		
+				<%}%>
+				<%if( it.href ){%>
+				<a href="${it.href}" target="${it.href}">Read More</a>		
+				<%}%>	
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" class="posts-footer">
+				&nbsp;
+			</td>
+		</tr>
+		
+	<%}%>
+	<%if(false) {%>
+	<tr>
+		<td valign="top" align="right">
+			<%for(i=1; i<= 10;i++){%>
+				<a href="x">${i}</a>&nbsp;
+			<%}%>
+		</td>
+	</tr>	
+	<%}%>
+</table>
+
